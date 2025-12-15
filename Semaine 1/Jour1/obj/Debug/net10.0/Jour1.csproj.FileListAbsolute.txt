@@ -1,0 +1,14 @@
+C:\Sarah\Projects\PrepaTest\Semaine 1\Jour1\obj\Debug\net10.0\Jour1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sarah\Projects\PrepaTest\Semaine 1\Jour1\obj\Debug\net10.0\Jour1.AssemblyInfoInputs.cache
+C:\Sarah\Projects\PrepaTest\Semaine 1\Jour1\obj\Debug\net10.0\Jour1.AssemblyInfo.cs
+C:\Sarah\Projects\PrepaTest\Semaine 1\Jour1\obj\Debug\net10.0\Jour1.csproj.CoreCompileInputs.cache
+C:\Sarah\Projects\PrepaTest\Semaine 1\Jour1\bin\Debug\net10.0\Jour1.exe
+C:\Sarah\Projects\PrepaTest\Semaine 1\Jour1\bin\Debug\net10.0\Jour1.deps.json
+C:\Sarah\Projects\PrepaTest\Semaine 1\Jour1\bin\Debug\net10.0\Jour1.runtimeconfig.json
+C:\Sarah\Projects\PrepaTest\Semaine 1\Jour1\bin\Debug\net10.0\Jour1.dll
+C:\Sarah\Projects\PrepaTest\Semaine 1\Jour1\bin\Debug\net10.0\Jour1.pdb
+C:\Sarah\Projects\PrepaTest\Semaine 1\Jour1\obj\Debug\net10.0\Jour1.dll
+C:\Sarah\Projects\PrepaTest\Semaine 1\Jour1\obj\Debug\net10.0\refint\Jour1.dll
+C:\Sarah\Projects\PrepaTest\Semaine 1\Jour1\obj\Debug\net10.0\Jour1.pdb
+C:\Sarah\Projects\PrepaTest\Semaine 1\Jour1\obj\Debug\net10.0\Jour1.genruntimeconfig.cache
+C:\Sarah\Projects\PrepaTest\Semaine 1\Jour1\obj\Debug\net10.0\ref\Jour1.dll
