@@ -5,7 +5,7 @@ using System.Transactions;
 List<int> numbers = [5,10,25,50,-80,2,55,4];
 int value = 2;
 
-if(numbers != null && numbers.Count()>0)
+if(numbers != null && numbers.Count>0)
 {
     //Exercice 1
     Console.WriteLine("Exercice 1 - Donner le nombre le plus grand :");
@@ -33,7 +33,7 @@ else
 List<int> listNumbers = [1, 5, 10, 3, 8];
 int limit = 4;
 
-if(listNumbers != null && listNumbers.Count()>0)
+if(listNumbers != null && listNumbers.Count>0)
 {
     Console.WriteLine($"Exercice 3 (Test final) - Combien de nombres sont strictement supérieurs à {limit}");
     int result2 = CountGreaterThan(listNumbers, limit);

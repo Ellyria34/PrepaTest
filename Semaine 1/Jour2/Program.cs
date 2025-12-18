@@ -4,7 +4,7 @@ List<int> numbers = [5, -2, 10, 0, -3, 4];
 int min = 3;
 int max = 9;
 
-if(numbers != null && numbers.Count()>0)
+if(numbers != null && numbers.Count>0)
 {
     // Exercice 1 :
     //résultat attendu = 19 (5 + 10 + 4)
