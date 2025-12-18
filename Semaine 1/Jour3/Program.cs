@@ -1,7 +1,7 @@
 ﻿
 List<int> numbers = [5, -2, 10, 0, -3, 4];
 
-if(numbers != null && numbers.Count() > 0)
+if(numbers != null && numbers.Count > 0)
 {
     //Exercice 1
     Console.WriteLine("Exercice 1 - Retourner l’indice du premier nombre négatif.");
@@ -21,7 +21,7 @@ else
 //Methods
 static int IndexOfFirstNegative(List<int> numbers)
 {
-    for(int i = 0; i < numbers.Count(); i++)
+    for(int i = 0; i < numbers.Count; i++)
     {
         if (numbers[i] < 0)
         {
@@ -35,7 +35,7 @@ static int CountGreaterThanIndex(List<int> numbers)
 {
     int countGreaterThanIndex = 0;
 
-    for(int i = 0; i < numbers.Count(); i++)
+    for(int i = 0; i < numbers.Count; i++)
     {
         if(i < numbers[i])
         {
