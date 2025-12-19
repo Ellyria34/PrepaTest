@@ -8,7 +8,7 @@ if(numbers != null && numbers.Count > 0)
     //Exercice 1
     Console.WriteLine("Exercice 1 - Retourner l’indice du premier nombre négatif.");
     int indexOfFirstNegative = IndexOfFirstNegative(numbers);
-    Console.WriteLine($"l'indice du premier nombre négatif est : {indexOfFirstNegative}");
+    Console.WriteLine($"L'indice du premier nombre négatif est : {indexOfFirstNegative}");
 
     //Exercice 
     Console.WriteLine("Exercice 2 - Compter combien de nombres sont strictement supérieurs à leur indice.");
