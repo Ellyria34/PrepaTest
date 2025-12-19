@@ -11,10 +11,22 @@ if(numbers != null && numbers.Count > 0)
     int sumPositiveEven = SumPositiveEven(numbers);
     Console.WriteLine($"La somme des nombre strictement positif est égale à : {sumPositiveEven}");
 
-    //Exercice 1
+    //Exercice 2
     Console.WriteLine("Exercice 2 - Retourner l’indice du plus grand nombre dans une liste.");
     int indexOfMax = IndexOfMax(numbers);
     Console.WriteLine($"L'index du nombre le plus grand est : {indexOfMax}");
+
+    //Exercice Final
+    Console.WriteLine("Exercice Final J4 - Déterminer si une liste de nombre est un palyndrome.");
+    bool isPalyndrome = IsPalindrome(numbers);
+    if (isPalyndrome == true)
+    {
+        Console.WriteLine($"La liste est un palyndrome");
+    }
+    else
+    {
+        Console.WriteLine($"La liste n'est pas un palyndrome");
+    }
 }
 else
 {
@@ -49,4 +61,16 @@ static int IndexOfMax(List<int>numbers)
         }
     }
     return indexOfMax;
+}
+
+static bool IsPalindrome(List<int> numbers)
+{
+    for(int i = 0; i < (numbers.Count/2); i++)
+    {
+        if(numbers[i] != numbers[numbers.Count-i-1])
+        {
+            return false;
+        }
+    }
+    return true;
 }
