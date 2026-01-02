@@ -43,7 +43,7 @@ static bool ContainsDuplicateIgnoringCase(List<string> words)
     for(int i = 0; i < words.Count; i++)
     {
         currentWord = words[i].ToLower();
-        for(int j = i+1; j < words.Count-i; j++ )
+        for(int j = i+1; j < words.Count; j++ )
         {
             if(currentWord == words[j].ToLower())
             {
@@ -61,4 +61,76 @@ Console.WriteLine("- Aucun mot n’est null");
 Console.WriteLine("- Aucun mot n’est vide");
 Console.WriteLine("Tous les mots sont uniques, sans tenir compte de la casse");
 Console.WriteLine("Il existe au moins un mot de longueur ≥ 6");
-//A faire quand B est validée
+
+static bool IsValidWordCollection(List<string> words)
+{
+    
+    if(words == null)
+    {
+        return false;
+    }
+    
+    List<string> normalizeWords = new List<string>();
+    normalizeWords = NormalizeStringList(words);
+    
+    if(normalizeWords.Count < 3)
+    {
+        return false;
+    }
+
+    int maxLenghtWord = 0;
+
+    foreach(string normalizeWord in normalizeWords)
+    {
+        if (normalizeWord == null || normalizeWord ==  "")
+        {
+            return false;
+        }
+        else
+        {
+            int currentWordLenght = normalizeWord.Length;
+            if(currentWordLenght > maxLenghtWord)
+            {
+                maxLenghtWord = currentWordLenght;
+            }
+        }
+    }
+
+    if(ContainsDuplicateIgnoringCase(normalizeWords) || maxLenghtWord < 6)
+    {
+        return false;
+    }
+    
+    return true;
+}
+
+static List<string> NormalizeStringList(List<string> words)
+{
+    List<string> normalizeStringList = new List<string>();
+    if(words == null)
+    {
+        return normalizeStringList;
+    }
+    
+    foreach(string word in words)
+    {
+        if(word == null)
+        {
+            normalizeStringList.Add("");
+            continue;
+        }
+
+        string normalizedWord = "";
+        
+        foreach(char c in word.ToLower().Trim())
+        {
+            if(char.IsLetterOrDigit(c))
+            {
+                normalizedWord += c;   
+            }
+        }
+        normalizeStringList.Add(normalizedWord);
+    }
+    return normalizeStringList;
+}
+
